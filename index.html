@@ -53,6 +53,8 @@
             line-height: 1.6;
         }
         .gallery {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             text-align: center;
         }
@@ -61,6 +63,7 @@
         }
         .gallery-item {
             width: 100%;
+            max-width: 400px;
             margin-bottom: 20px;
         }
         .gallery-item img {
@@ -122,8 +125,12 @@
             .films a,
             .equipment p,
             .contact-info p,
-            .thank-you h2 {
-                font-size: 18px;
+            .thank-you h2,
+            header h1 {
+                font-size: 24px;
+            }
+            .gallery-item {
+                max-width: 100%;
             }
         }
     </style>
