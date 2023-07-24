@@ -116,14 +116,15 @@
             color: #008000;
         }
         .index {
-            justify-content: space-between;
-            align-items: center;
+            display: block;
             background-color: #f0f0f0;
             padding: 10px 20px;
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
+            transition: opacity 0.3s ease;
+            opacity: 1;
         }
         .index ul {
             list-style: none;
@@ -137,7 +138,7 @@
         .index a {
             color: #333;
             text-decoration: none;
-            font-size: 28px;
+            font-size: 16px;
         }
         @media screen and (max-width: 768px) {
             .about-me p,
@@ -146,11 +147,9 @@
             .films a,
             .equipment p,
             .contact-info p,
-            .thank-you h2 {
-                font-size: 38px;
-            },
+            .thank-you h2,
             .index a {
-                font-size: 38px;
+                font-size: 18px;
             }
         }
     </style>
@@ -236,7 +235,7 @@
             <p>Email: <a href="mailto:hamam.ryan01@gmail.com" style="color: #333399; text-decoration: underline;">hamam.ryan01@gmail.com</a></p>
         </div>
     </div>
-    <div class="index">
+    <div class="index" id="index">
         <ul>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -249,5 +248,21 @@
     <div class="thank-you">
         <h2>Thank you for looking at my portfolio 😊!</h2>
     </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const index = document.getElementById('index');
+            const scrollPosition = window.scrollY;
+            const documentHeight = document.body.clientHeight;
+            const windowHeight = window.innerHeight;
+            const bottomThreshold = documentHeight - windowHeight - 50; // Adjust the threshold as needed
+            
+            if (scrollPosition > bottomThreshold) {
+                index.style.opacity = '0';
+            } else {
+                index.style.opacity = '1';
+            }
+        });
+    </script>
 </body>
 </html>
