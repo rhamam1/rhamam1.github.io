@@ -43,27 +43,27 @@
         }
         .about-me {
             padding: 20px;
+            text-align: center;
         }
         .about-me h2 {
             color: #ff0000;
-            text-align: center;
         }
         .about-me p {
             color: #000080;
             line-height: 1.6;
         }
         .gallery {
-            text-align: center;
-
+            display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            text-align: center;
         }
         .gallery h2 {
             color: #ff0000;
-            text-align: center;
         }
         .gallery-item {
             width: 100%;
+            max-width: 400px;
             margin-bottom: 20px;
         }
         .gallery-item img {
@@ -77,12 +77,12 @@
         }
         .social-media h2 {
             color: #ff0000;
-            text-align: center;
         }
         .social-media a {
             color: #333399;
-            text-decoration: none;
+            text-decoration: underline;
             margin: 5px;
+            display: inline-block;
         }
         .films {
             text-align: center;
@@ -90,11 +90,10 @@
         }
         .films h2 {
             color: #ff0000;
-            text-align: center;
         }
         .films a {
             color: #333399;
-            text-decoration: none;
+            text-decoration: underline;
             display: block;
             margin-bottom: 10px;
         }
@@ -104,7 +103,6 @@
         }
         .equipment h2 {
             color: #ff0000;
-            text-align: center;
         }
         .equipment p {
             color: #333399;
@@ -119,6 +117,11 @@
             font-size: 24px;
             margin: 0;
             color: #008000;
+        }
+        @media screen and (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -162,9 +165,7 @@
             <a href="https://www.youtube.com/watch?v=UNzpc8jjO6E" target="_blank" rel="noopener">Talking about the last film (me)</a>
             <a href="https://www.youtube.com/watch?v=TExpo5Nc1nM" target="_blank" rel="noopener">Gambling film</a>
             <a href="https://www.youtube.com/watch?v=ZRaaNTEwFaU" target="_blank" rel="noopener">Short restaurant film</a>
-            <a href="https://www.youtube.com/watch?v=K0bJMhxHN80" target
-
-="_blank" rel="noopener">Police and Thief film</a>
+            <a href="https://www.youtube.com/watch?v=K0bJMhxHN80" target="_blank" rel="noopener">Police and Thief film</a>
             <a href="https://www.youtube.com/watch?v=Ma3QY3Fbv5M" target="_blank" rel="noopener">Food dish</a>
             <a href="https://www.youtube.com/watch?v=hcMS50cY6M0" target="_blank" rel="noopener">How to use a slider with the camera?</a>
             <a href="https://www.youtube.com/watch?v=Hgu2aFO_A0c" target="_blank" rel="noopener">Restaurant food</a>
@@ -202,7 +203,7 @@
             <p>Phone number:</p>
             <p>+1 (226) 503-3301 (Canada)</p>
             <p>+966 555 792453 (Saudi Arabia)</p>
-            <p>Email: <a href="mailto:hamam.ryan01@gmail.com">hamam.ryan01@gmail.com</a></p>
+            <p>Email: <a href="mailto:hamam.ryan01@gmail.com" style="color: #333399; text-decoration: underline;">hamam.ryan01@gmail.com</a></p>
         </div>
     </div>
     <div class="thank-you">
