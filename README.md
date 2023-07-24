@@ -1,1 +1,2 @@
-# rhamam1.github.io
+Ryan Hamam is a passionate filmmaker with a background in videos and photos. With a film and TV diploma and a bachelor's degree in media, I specialize in capturing captivating visual stories. Fluent in both English and Arabic, I'm equipped to deliver outstanding results for various projects, including weddings, restaurants, and social media content. My work is a reflection of my dedication to the craft, so take a moment to explore and enjoy the art of storytelling through my lens.
+
