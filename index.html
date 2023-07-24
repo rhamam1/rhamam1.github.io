@@ -47,12 +47,10 @@
         }
         .about-me h2 {
             color: #ff0000;
-            font-size: 32px;
         }
         .about-me p {
             color: #000080;
-            line-height: 1.8;
-            font-size: 24px;
+            line-height: 1.6;
         }
         .gallery {
             justify-content: space-between;
@@ -60,11 +58,9 @@
         }
         .gallery h2 {
             color: #ff0000;
-            font-size: 32px;
         }
         .gallery-item {
             width: 100%;
-            max-width: 400px;
             margin-bottom: 20px;
         }
         .gallery-item img {
@@ -78,14 +74,12 @@
         }
         .social-media h2 {
             color: #ff0000;
-            font-size: 32px;
         }
         .social-media a {
             color: #333399;
             text-decoration: underline;
             margin: 5px;
             display: inline-block;
-            font-size: 24px;
         }
         .films {
             text-align: center;
@@ -93,14 +87,12 @@
         }
         .films h2 {
             color: #ff0000;
-            font-size: 32px;
         }
         .films a {
             color: #333399;
             text-decoration: underline;
             display: block;
             margin-bottom: 10px;
-            font-size: 24px;
         }
         .equipment {
             text-align: center;
@@ -108,11 +100,9 @@
         }
         .equipment h2 {
             color: #ff0000;
-            font-size: 32px;
         }
         .equipment p {
             color: #333399;
-            font-size: 24px;
         }
         .thank-you {
             text-align: center;
@@ -126,31 +116,29 @@
             color: #008000;
         }
         .index {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px 20px;
             position: fixed;
-            top: 50%;
-            left: 10px;
-            transform: translateY(-50%);
-            background-color: #fff;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .index h3 {
-            margin-top: 0;
-            color: #ff0000;
-            font-size: 24px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
         }
         .index ul {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: flex;
         }
         .index li {
-            margin-bottom: 10px;
+            margin-right: 10px;
         }
         .index a {
-            color: #333399;
+            color: #333;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
         }
         @media screen and (max-width: 768px) {
             .about-me p,
@@ -160,9 +148,8 @@
             .equipment p,
             .contact-info p,
             .thank-you h2,
-            header h1,
-            .index {
-                font-size: 28px;
+            .index a {
+                font-size: 18px;
             }
         }
     </style>
@@ -171,17 +158,6 @@
     <header>
         <h1>Ryan Hamam – Filmmaker</h1>
     </header>
-    <div class="index">
-        <h3>Index</h3>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#gallery">Gallery Sample</a></li>
-            <li><a href="#social-media">Social Media Accounts</a></li>
-            <li><a href="#films">Films Sample</a></li>
-            <li><a href="#equipment">Equipment I Use</a></li>
-            <li><a href="#contact-info">Contact</a></li>
-        </ul>
-    </div>
     <div class="container">
         <div class="about-me" id="about-me">
             <h2>About Me:</h2>
@@ -258,6 +234,16 @@
             <p>+966 555 792453 (Saudi Arabia)</p>
             <p>Email: <a href="mailto:hamam.ryan01@gmail.com" style="color: #333399; text-decoration: underline;">hamam.ryan01@gmail.com</a></p>
         </div>
+    </div>
+    <div class="index">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+            <li><a href="#films">Films</a></li>
+            <li><a href="#equipment">Equipment</a></li>
+            <li><a href="#contact-info">Contact</a></li>
+        </ul>
     </div>
     <div class="thank-you">
         <h2>Thank you for looking at my portfolio 😊!</h2>
