@@ -194,15 +194,17 @@
                 <img src="https://raw.githubusercontent.com/rhamam1/ryan.collection/main/DSC_6380.JPG" alt="Image 3">
             </div>
         </div>
-        <!-- Button to show more images -->
+        
+       <!-- Button to show more images -->
 <button id="show-more-images" onclick="showMoreImages()">Show More Images</button>
+
 <script>
     function showMoreImages() {
         // Array of additional image filenames
         const moreImages = [
-            'C0001T01.JPG',
-            'C0002T01.JPG',
-            'C0004T01.JPG'
+            'https://raw.githubusercontent.com/rhamam1/ryan.collection/main/C0001T01.JPG',
+            'https://raw.githubusercontent.com/rhamam1/ryan.collection/main/C0002T01.JPG',
+            'https://raw.githubusercontent.com/rhamam1/ryan.collection/main/C0004T01.JPG'
         ];
 
         // Get the image gallery div
@@ -212,7 +214,8 @@
         moreImages.forEach(image => {
             const img = document.createElement('img');
             img.src = image;
-            img.alt = Image ${image.split('.')[0].replace('image', '')};
+            img.alt = `Image ${image.split('/').pop().split('.')[0]}`;
+            img.classList.add('gallery-item');  // Add gallery-item class for styling
             gallery.appendChild(img);
         });
 
@@ -220,6 +223,7 @@
         document.getElementById('show-more-images').style.display = 'none';
     }
 </script>
+
 <style>
     .image-gallery img {
         margin: 10px;
@@ -240,15 +244,17 @@
         background-color: #005f8a;
     }
 </style>
+
 <div class="image-gallery" id="image-gallery">
     <!-- Initial images -->
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-    <img src="image3.jpg" alt="Image 3">
+    <img src="https://raw.githubusercontent.com/rhamam1/ryan.collection/main/DSC_62999.jpg" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/rhamam1/ryan.collection/main/DSC00379.jpg" alt="Image 2">
+    <img src="https://raw.githubusercontent.com/rhamam1/ryan.collection/main/DSC_6380.JPG" alt="Image 3">
 
     <!-- Button to show more images -->
     <button id="show-more-images" onclick="showMoreImages()">Show More Images</button>
 </div>
+
         <div class="separator"></div>
         <div class="social-media" id="social-media">
             <h2>Social Media Accounts:</h2>
