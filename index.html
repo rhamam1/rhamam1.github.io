@@ -186,7 +186,16 @@
     <img class="logo-image" src="https://raw.githubusercontent.com/rhamam1/ryan.collection/main/my%20logo.png" alt="Photo Ryan Logo">
 </div>
 
-        
+/* Add this CSS to control the image sizes in the gallery */
+.gallery-item img {
+    max-width: 100%; /* Prevent the image from overflowing */
+    height: auto; /* Maintain aspect ratio */
+    width: auto;
+    max-width: 400px; /* You can adjust this size to fit your needs */
+    margin: 0 auto;
+    display: block;
+}
+
         <div class="separator"></div>
         <div class="gallery" id="gallery">
             <h2>Gallery Sample:</h2>
